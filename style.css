@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: cursive;
+    list-style-type: none;
+    outline: none;
+    color: white;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width:100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+header{
+    margin-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+display: flex;
+z-index: 100;
+justify-content: space-between;
+align-items: center;
+background-color:rgba(124, 95, 95, 0.212);
+backdrop-filter: blur(10px);
+transition: 0.1s ease;
+border-bottom:2px solid #b81a1a ;
+}
+        
+header::before{
+    content:'';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color:rgba(27, 26, 26, 0.2);
+backdrop-filter: blur(10px);
+transition: 0.5s ease ;
+    background: linear-gradient(120deg,transparent,rgba(255,255,255,0.5),transparent);
+}
+header:hover::before{
+    left: 100%;
+}
+
+    .logo{
+        font-size: 2.5em;
+        color: #b81a1a;
+        font-weight: bolder;
+        transition: 0.2s ease;
+    }
+    .logo:hover{
+        transform: scale(1.1);
+    }
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+    
+.nav-1{
+        font-size: 2rem;
+        transition: 0.2s ease;
+        margin-right: 4rem;
+        border: 3px solid transparent;
+        border-bottom-right-radius: -10px;
+        border-bottom-left-radius: -10px;
+        border-top-right-radius: -10px;
+        border-top-left-radius: -10px; 
+  
+    }
+
+    .nav-1:hover
+    {
+        transform: scale(1.1);
+        border-bottom:3px solid #b81a1a;
+        border-top:2px solid #b81a1a;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+        
+@media(max-width:750px){
+    .nav-1{
+        display:none;
+    }
+}
+      
+.nav-11{
+        display: none;
+                  
+        }
+        @media(max-width:750px){
+            .nav-11{
+                display:flex;
+            }
+        }
+        
+        
+
+
+
+.sidebar{
+    display:none;
+    height: 100vh;
+    width:200px;
+    flex-direction:column;
+    position:fixed;
+    justify-content:start ;
+    padding-top: 20px;
+    top:0;
+    right: 0;
+    z-index: 100;
+    background-color:rgba(100, 90, 90, 0.264);
+    backdrop-filter: blur(10px);
+    align-items: start;
+  
+}
+
+
+@keyframes opening {
+    0%,25%{
+        width: 50px;
+    }
+    50%{
+        width: 100px;
+    }
+    75%{
+        width: 150px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+
+.nav-2
+{
+    font-size: 2rem;
+    transition: 0.2s ease;
+    margin-top: 2em;
+    margin-left: 1em;
+width: 80%;
+   background-color: rgba(46, 46, 46, 0.473);
+    position: relative;
+    z-index: 100;
+    border: 3px solid transparent;
+    border-bottom-right-radius: -10px;
+    border-bottom-left-radius: -10px;
+    border-top-right-radius: -10px;
+    border-top-left-radius: -10px;
+    
+}
+.nav-2:hover{
+    transform: scale(1.1);
+    border-bottom:3px solid #b81a1a;
+    border-top:2px solid #b81a1a;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+ 
+
+    .nav-22{
+        color: #b81a1a;
+        position: fixed;
+        border:2px solid transparent;
+        border-radius: 0%;
+        margin-right: 2em;
+        right: 0;
+        margin-top: 2em;
+        font-size:3px ;
+        margin-bottom: 2em;
+        transition: 0.2s ease;
+        
+    }
+    .nav-22:hover{
+       transform: scale(1.3);
+       border:2px solid    #b81a1a;
+        border-radius: 50%;   
+    }
+    section{
+        display: flex;
+        position:fixed ;
+        top: 21em;
+        left: 2em;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       
+
+
+    }
+    @media (max-width:750px) {
+        section{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+.img{
+    background-color:blanchedalmond ;
+    position: relative;
+    top: 1em;
+    font-family:fantasy;
+    left: 10;
+    height: 42vh;
+    width: 42vw;
+}
+@media (max-width:750px) {
+    .img{
+       
+        top:0;
+        height: 40vh;
+        width: 70vw;
+        align-self: center;
+    }
+
+}
+    .text{
+font-size: 2rem;
+margin-left: 1em;
+font-family:fantasy;
+    }
+    @media (max-width:750px) {
+        .text{
+            font-size: 1rem;
+            margin-left: 1em; 
+            align-self: center;
+          
+        }
+    
+    }
+    
+span{
+    color: #b81a1a;
+    font-size:35px;
+    font-weight: 700;
+    font-family:monospace;
+}
+
+.name{
+    font-size: 35px;
+    word-spacing: 10px;
+    font-family:monospace;
+}
+.typing{
+   position: relative;
+   
+}
+
+.typing::before{
+    content:"Btech student";
+    color: #b81a1a;
+    animation: words 20s steps(12) infinite;
+
+}
+.typing::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+@keyframes cursor{
+    to{
+        border-left: 2px solid  #b81a1a;
+    }
+}
+@keyframes words {    
+
+    0%,20%{
+        content: "Developer";
+    }
+    21%,25%{
+        content: " ";
+    }
+    26%,40%{
+        content:" Btech student";
+    }
+    41%,45%{
+        content: " ";
+    }
+    46%,60%{
+        content: "Front-End developer";
+    }
+    61%,65%{
+        content: " ";
+    }
+    66%,80%{
+        content:"Pata nhi";
+
+    }
+    81%,85%{
+        content:" ";
+
+    }
+
+    85%,100%{
+        content:"Learning" ;
+    }
+}
+.line{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 400px;}
+    @media (max-width:750px) {
+        .line{
+            font-size: 2rem;
+            margin-top: 3em; 
+            align-self: center;
+          
+        }
+    }
